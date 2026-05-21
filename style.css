@@ -124,25 +124,19 @@ header .fa-bars {
   }
   
   header .logo{
-    font-size: 2.5rem;
-    display: inline-block;
-    padding-left: 0.5rem;
+    font-size: 2rem;
   }
   
   header #toggler{
     border: hidden;
   }
   header .icons a{
-    font-size: 2.5rem;
+    font-size: 2rem;
     display: inline-block;
   }
   
   .heading{
     font-size: 3rem;
-  }
-  
-  .home .content h3{
-    font-size: 1rem;
   }
   
    header #toggler{
