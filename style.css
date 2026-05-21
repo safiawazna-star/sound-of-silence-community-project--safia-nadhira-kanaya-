@@ -124,7 +124,7 @@ header .fa-bars {
   }
   
   header .logo{
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: inline-block;
   }
   
@@ -132,7 +132,7 @@ header .fa-bars {
     border: hidden;
   }
   header .icons a{
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: inline-block;
   }
   
@@ -141,8 +141,12 @@ header .fa-bars {
   }
   
   .home .content h3{
-    font-size: 3rem;
+    font-size: 2rem;
+    display: inline-block;
   }
+   header #toggler{
+     border: none;
+   }
 }
 
 .home{
