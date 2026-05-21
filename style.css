@@ -90,11 +90,6 @@ header .fa-bars {
   section{
     padding:2rem;
   }
-  
-  .home .content h3 {
-  font-size: 6rem;
-  color: black;
-}
 }
 
 @media (max-width: 768px){
@@ -113,11 +108,6 @@ header .fa-bars {
   header #toggler:checked ~ .navbar{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
-  
-  .home .content h3 {
-  font-size: 6rem;
-  color: black;
-}
 
   header .navbar a{
     margin:1.5rem;
@@ -169,6 +159,11 @@ header .fa-bars {
   background-position: center;
 }
 
+  .home .content h3 {
+    font-size: 6rem;
+    color: black;
+  }
+  
 .home .content{
   max-width: 65rem;
   padding-top: 7rem;
