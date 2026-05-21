@@ -118,7 +118,7 @@ header .fa-bars {
 }
 }
 
-@media (max-width: 450px){
+@media (max-width: 672px){
   html{
     font-size: 50%;
   }
@@ -126,6 +126,7 @@ header .fa-bars {
   header .logo{
     font-size: 2.5rem;
     display: inline-block;
+    padding-left: 0.5rem;
   }
   
   header #toggler{
@@ -142,8 +143,10 @@ header .fa-bars {
   
   .home .content h3{
     font-size: 2rem;
+    padding: 0.5rem;
     display: inline-block;
   }
+  
    header #toggler{
      border: none;
    }
