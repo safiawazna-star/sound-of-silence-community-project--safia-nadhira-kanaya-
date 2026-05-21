@@ -138,6 +138,7 @@ header .fa-bars {
 
 .home .content{
   max-width: 65rem;
+  padding-top: 7rem;
 }
 
 .home .content h3{
@@ -147,7 +148,7 @@ header .fa-bars {
 
 .home .content span{
   font-size: 2.5rem;
-  color: dimgray;
+  color: darkslategrey;
   padding: 0.5rem;
   line-height: 1.5;
 }
@@ -212,7 +213,7 @@ header .fa-bars {
 }
 
 .heading-products span{
-  color: dimgray;
+  color: dimgrey;
 }
 
 .products{
