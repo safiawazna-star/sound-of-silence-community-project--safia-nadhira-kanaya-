@@ -138,6 +138,7 @@ header .fa-bars {
 
 .home .content{
   max-width: 65rem;
+  padding-top: 8rem;
 }
 
 .home .content h3{
@@ -165,6 +166,7 @@ header .fa-bars {
 
 .home .content h3{
   font-size:5rem;
+  padding: 3rem;
 }
 
 .home .content span{
