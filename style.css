@@ -1,0 +1,354 @@
+:root{
+  --rosybrown: rosybrown
+}
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 65%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: ghostwhite;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem black;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+header .logo{
+  font-size: 3rem;
+  color: slategray;
+  font-weight: bolder;
+}
+
+header .navbar a{
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: darkgray;
+}
+
+header .navbar a:hover{
+  color: lightsteelblue;
+}
+
+header .icons a{
+  font-size: 3rem;
+  color: slategray;
+  margin-left: 1.5remrem;
+}
+
+header .icons a:hover{
+  color: lightcoral;
+}
+
+header #toggler {
+  display: none;
+}
+
+header .fa-bars {
+  font-size: 3rem;
+  margin-right: 2rem;
+  color: slategrey;
+  border-radius: 1rem;
+  padding: 1rem 0.75rem;
+  cursor: pointer;
+  border: .1rem solid black;
+  display: none;
+}
+
+/* media queries */
+@media (max-width:991px){
+  
+  html{
+    font-size: 55%;
+  }
+  
+  header{
+    padding:2rem;
+  }
+  
+  section{
+    padding:2rem;
+  }
+}
+
+@media (max-width: 768px){
+  header .fa-bars{
+    display: block;
+  }
+  
+  header .navbar{
+    position: absolute;
+    top:100%; left:0; right:0;
+    background: lightsteelblue;
+    border-top: .1rem solid black;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  
+  header #toggler:checked ~ .navbar{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a{
+    margin:1.5rem;
+    padding: 1.5rem;
+    background: ghostwhite;
+    border: .1rem solid black;
+    display: block;
+}
+}
+
+@media (max-width: 450px){
+  html{
+    font-size: 50%;
+  }
+  .heading{
+    font-size: 3rem;
+  }
+}
+
+.home{
+  display:flex;
+  align-items:center;
+  min-height: 100vh; 
+  background-image: url('./images/er2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content{
+  max-width: 65rem;
+}
+
+.home .content h3{
+  font-size: 6rem;
+  color: black;
+}
+
+.home .content span{
+  font-size: 2.5rem;
+  color: lightgray;
+  padding: 0.5rem;
+  line-height: 1.5;
+}
+.home .content p{
+  font-size: 1.5rem;
+  color: black;
+  padding:1rem 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.home{
+  background-position: center;
+}
+
+.home .content h3{
+  font-size:5rem;
+}
+
+.home .content span{
+  font-size:2.5rem;
+}
+
+.research .heading{
+  text-align: center;
+  font-size: 4rem;
+  color: skyblue;
+  padding:1rem;
+  margin:2rem 0;
+  background: whitesmoke;
+}
+
+.research .heading span{
+  color: dimgray;
+}
+
+.research p{
+  text-align: center;
+  font-size: 2rem;
+  color: dimgrey;
+  padding:1rem;
+  margin:0
+}
+
+.research .flipbook-container{
+  display: flex;
+  align-items:center;
+  gap:2rem;
+  flex-wrap: wrap;
+  padding:2rem 0;
+  padding-bottom: 0.2rem;
+}
+
+.heading-products{
+  text-align: center;
+  font-size: 4rem;
+  color: skyblue;
+  padding:1rem;
+  margin:2rem 0;
+  background-color: whitesmoke;
+}
+
+.heading-products span{
+  color: dimgray;
+}
+
+.products{
+  background-color: skyblue;
+}
+
+
+    /* Kontainer utama untuk mengatur tata letak */
+  .instagram-grid-container {
+    display: flex;
+    flex-direction: column; /* Default untuk HP: menyusun ke bawah */
+    gap: 20px; /* Jarak antar video */
+    width: 100%;
+    max-width: 1100px; /* Batas lebar maksimal di laptop */
+    margin: 0 auto; /* Membuat posisi kontainer di tengah halaman */
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Mengatur pembungkus tiap item video */
+  .instagram-item {
+    width: 100%;
+    max-width: 540px; /* Menyesuaikan max-width asli dari Instagram */
+  }
+
+  /* RESPONSIVE LAYOUT: Untuk layar Tablet & Laptop (Lebar minimal 768px) */
+  @media (min-width: 768px) {
+    .instagram-grid-container {
+      flex-direction: row; /* Mengubah posisi menjadi bersebelahan */
+      align-items: stretch;
+    }
+    .instagram-item {
+      flex: 1; /* Membagi ruang sama rata antara kiri dan kanan */
+    }
+  }
+  
+    /* Kontainer utama grid layout */
+  .instagram-grid-container {
+    display: flex;
+    flex-direction: row;        /* Default: Bersebelahan di layar laptop/PC */
+    justify-content: center;   /* Posisi di tengah halaman */
+    gap: 20px;                 /* Jarak pemisah antar kiriman */
+    padding: 20px;             /* Jarak ruang di sekeliling halaman */
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  /* Mengatur tiap item agar responsif sesuai aturan bawaan Instagram */
+  .instagram-item {
+    flex: 1;
+    min-width: 326px;          /* Batas lebar minimum */
+    max-width: 540px;          /* Batas lebar maksimum */
+    width: 100%;
+  }
+
+  /* RESPONSIVE: Aturan layout khusus saat dibuka di HP (Layar di bawah 768px) */
+  @media (max-width: 767px) {
+    .instagram-grid-container {
+      flex-direction: column;  /* Mengubah susunan menjadi berurutan ke bawah */
+      align-items: center;     /* Posisi konten tetap rata tengah di layar HP */
+    }
+    
+    .instagram-item {
+      max-width: 100%;         /* Menyesuaikan lebar penuh layar HP */
+    }
+  }
+  
+  .heading-recap {
+  text-align: center;
+  font-size: 4rem;
+  color: skyblue;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: whitesmoke;
+}
+
+.heading-recap span {
+  color: dimgray;
+}
+
+.recap .image-recap {
+  flex: 1 1 40rem;
+}
+
+.recap .image-recap img {
+  width: 100%;
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.footer .box-container .box{
+  flex:1 1 25rem;
+}
+
+.footer .box-container .box h2{
+  color: #333;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+  display: block;
+  color: #666;
+  font-size: 1.5rem;
+  padding:1rem 0;
+}
+
+.footer .box-container .box a:hover{
+  color: lightsalmon;
+  text-decoration: underline;
+}
+
+.footer .tagline p {
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  padding: 2rem;
+  padding-bottom: 0;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  color: lightslategray;
+}
+
+.footer .credit{
+  text-align: center;
+  padding: 2.5rem;
+  margin-top: 1.5rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #333;
+  border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+.footer .credit span{
+  color: lightslategray;
+}
